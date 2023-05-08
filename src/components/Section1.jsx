@@ -2,7 +2,11 @@ import React from "react";
 
 const Section1 = () => {
   return (
-    <div className="text-white mt-96 flex flex-col gap-8 ">
+    <div className="text-white  flex flex-col md:flex-row-reverse gap-8 relative">
+      <div className="relative -top-16 z-0">
+        <img src="./images/astro.png" alt="" />
+      </div>
+      <div className="mt-10">
       <h1 className="text-[32px] font-bold">
         <span className="text-[#9BA4ED]">Hi!</span> I'am a FrontEnd Developer{" "}
       </h1>
@@ -16,6 +20,8 @@ const Section1 = () => {
           Click here
         </button>
       </div>
+      </div>
+
     </div>
   );
 };
